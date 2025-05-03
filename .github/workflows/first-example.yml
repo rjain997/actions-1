@@ -8,13 +8,21 @@ jobs:
         steps:
             - name: Welcome message
               run: echo "Hi RJ"
+    second_job:
+        runs-on: ubuntu-latest        
+        steps:
               
             - name: Checkout Repo
               uses: actions/checkout@v4
-                 
-
+    third_job:
+        runs-on: ubuntu-latest        
+        steps:   
             - name: List Files
               run: ls
+    fourth_job:
+        runs-on: ubuntu-latest        
+        steps:      
               
             - name : Read File
-              run: cat README.md  
+              run: cat README.md
+                
