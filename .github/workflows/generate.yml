@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/generate.yml'
+      - '.github/workflows/ascii.yml'
 
 jobs:
   ascii_job:
@@ -16,6 +17,6 @@ jobs:
         run: ls -lrth
       
       - name: Execute Shell Script!
-        run:  bash ascii-script.sh
+        run:  bash ascii.sh
 
 
