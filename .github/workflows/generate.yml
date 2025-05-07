@@ -16,6 +16,6 @@ jobs:
         run: ls -lrth
       
       - name: Execute Shell Script
-        run:   
+        run:  bash ascii-script.sh
 
 
