@@ -16,13 +16,13 @@ jobs:
         run : sudo apt-get install cowsay -y
         
       - name: Execute Cowsay CMD
-        run: cowsay -f dragon "Run for cover,I am a DRAGON....RAWR" >> dragon.txt  
+        run: cowsay -f dragon "Run for cover,I am a DRAGON....RAWR" 
      
-      - name: Run Commands
-        run: grep -i "dragon" dragon.txt
+    #   - name: Run Commands
+    #     run: grep -i "dragon" dragon.txt
 
-      - name: Read File
-        run: cat dragon.txt
+    #   - name: Read File
+    #     run: cat dragon.txt
     
       - name: list Repo File
         run: ls -ltra  
