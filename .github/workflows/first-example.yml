@@ -21,7 +21,7 @@ jobs:
             - name : list users
               run: ls -l /home
             - name : list services
-              run: ls /etc/ | grep -i ssh
+              run: ls /etc/
 
 
 
