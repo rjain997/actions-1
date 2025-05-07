@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/generate.yml'
-      - '.github/workflows/ascii.sh'
+      - 'ascii.sh'
 
 jobs:
   ascii_job:
