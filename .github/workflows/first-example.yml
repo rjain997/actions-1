@@ -8,8 +8,8 @@ jobs:
         steps:
             - name: Welcome message
               run: echo "Hi rj"
-    second_job:
-        runs-on: ubuntu-latest
+    #second_job:
+        #runs-on: ubuntu-latest
         steps:             
             - name: Checkout Repo
               uses: actions/checkout@v4
