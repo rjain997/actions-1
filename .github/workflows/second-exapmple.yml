@@ -2,7 +2,7 @@ name: My second Workflow
 
 on: push
       paths:
-      - '.github/workflows/second-example.yml'
+      - '.github/workflows/second-exapmple.yml'
 
 jobs:
   pehla_job:
