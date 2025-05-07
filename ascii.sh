@@ -14,3 +14,4 @@ cat dragon.txt
 echo "-------------------------------------------------------------"
 echo "Lets see the file in this directory"
 ls -ltrh
+echo "Lets roar"
