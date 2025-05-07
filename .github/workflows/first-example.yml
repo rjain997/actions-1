@@ -19,6 +19,6 @@ jobs:
             - name : Read File2
               run: cat sample.txt
             - name : list users
-              run: ls /home
+              run: ls -l /home
 
                 
