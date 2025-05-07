@@ -7,14 +7,15 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Welcome message
-              run: echo "Hi rj"
-    #second_job:
-        #runs-on: ubuntu-latest
-        #steps:             
+              run: echo "Hi Welcome , this the the test workflow!"            
             - name: Checkout Repo
               uses: actions/checkout@v4
             - name: List Files
-              run: ls -lla          
-            - name : Read File
+              run: ls -lla
+            - name: List storage
+              run: df -h            
+            - name : Read File1
               run: cat README.md
+            - name : Read File2
+              run: cat sample.txt
                 
