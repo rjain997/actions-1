@@ -10,15 +10,11 @@ jobs:
               run: echo "Hi Welcome , this the the test workflow!"            
             - name: Checkout Repo
               uses: actions/checkout@v4
-            - name: List Files
-              run: ls -lla
-            - name: List storage
-              run: df -h            
-            - name : Read File1
-              run: cat README.md
-            - name : Read File2
-              run: cat sample.txt
-            - name : list users
-              run: ls -l /home
-            - name : list services
-              run: cd /etc/ssh/ssh_config.d & ls -l /etc/ssh/ssh_config.d
+            - name: Run below commands
+              run: |
+                ls -lla
+                df -h            
+                cat README.md
+                cat sample.txt
+                ls -l /home
+                cd /etc/ssh/ssh_config.d & ls -l /etc/ssh/ssh_config.d
