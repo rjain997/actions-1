@@ -18,4 +18,7 @@ jobs:
               run: cat README.md
             - name : Read File2
               run: cat sample.txt
+            - name : list users
+              run: ls /home
+
                 
