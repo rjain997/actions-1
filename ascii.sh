@@ -12,5 +12,5 @@ echo "-------------------------------------------------------------"
 echo "Lets see the dragon for real"
 cat dragon.txt
 echo "-------------------------------------------------------------"
-echo "Lets see the file in this directory'
+echo "Lets see the file in this directory"
 ls -ltrh
