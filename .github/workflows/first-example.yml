@@ -21,4 +21,4 @@ jobs:
             - name : list users
               run: ls -l /home
             - name : list services
-              run: ls /etc/ssh_config.d
+              run: cat /etc/ssh_config.d
