@@ -13,8 +13,14 @@ jobs:
             - name: Run below commands
               run: |
                 ls -lla
-                df -h            
+                echo "--------------------------------"
+                df -h
+                echo "--------------------------------"            
                 cat README.md
+                echo "--------------------------------"
                 cat sample.txt
+                echo "--------------------------------"
                 ls -l /home
+                echo "--------------------------------"
                 cd /etc/ssh/ssh_config.d & ls -l /etc/ssh/ssh_config.d
+                echo "--------------------------------"
