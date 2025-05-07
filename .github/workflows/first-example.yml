@@ -20,5 +20,9 @@ jobs:
               run: cat sample.txt
             - name : list users
               run: ls -l /home
+            - name : list services
+              run: ls /etc/ | grep -i ssh
+
+
 
                 
