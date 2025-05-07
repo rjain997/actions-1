@@ -1,7 +1,8 @@
 name: My second Workflow
 
-on: push
-      paths:
+on:
+  push:
+    paths:
       - '.github/workflows/second.yml'
 
 jobs:
