@@ -18,7 +18,7 @@ jobs:
       - name: Run Commands
         run: |
           echo "Listing files:"
-          ls -lla
+          ls -lrth
 
           echo "--------------------------------"
           echo "Disk usage:"
