@@ -19,23 +19,11 @@ jobs:
         run: |
           echo "Listing files:"
           ls -lrth
-
           echo "--------------------------------"
           echo "Disk usage:"
           df -h
-
           echo "--------------------------------"
           echo "Displaying README.md:"
-          cat README.md || echo "README.md not found"
 
-          echo "--------------------------------"
-          echo "Displaying sample.txt:"
-          cat sample.txt || echo "sample.txt not found"
-
-          echo "--------------------------------"
-          echo "Listing home directory:"
-          ls -l /home
-
-          echo "--------------------------------"
-          echo "Checking SSH config directory:"
-          [ -d /etc/ssh/ssh_config.d ] && ls -l /etc/ssh/ssh_config.d || echo "SSH config directory not found"
+      - name: Generate ACSII Artwork
+        run: cowsay -f dragon "Run for cover,I am a DRAGON....RAWR" >> dragon.txt
