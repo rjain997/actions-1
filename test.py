@@ -17,4 +17,4 @@ if size in size_prices:
 
     print(f"Your total bill is ${total_bill}")
 else:
-    print("Invalid pizza size. Please enter S, M, or L.")
+    print("Invalid pizza size. Please enter S, M, or L : ")
