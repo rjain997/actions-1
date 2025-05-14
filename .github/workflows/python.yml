@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - '.github/workflows/python.yml'
+      - 'test.py'
+      
 
 jobs:
   python_job:
