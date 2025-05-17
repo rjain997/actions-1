@@ -15,7 +15,7 @@ on:
 
 jobs:
   order_pizza:
-    runs-on: ubuntu-latest
+    runs-on: my-runner
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
