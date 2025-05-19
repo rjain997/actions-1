@@ -30,7 +30,9 @@ jobs:
           
           echo "##########################################"
           test="${{ secrets.TEST }}"
-          echo $test
+          echo "::add-mask::$test"   # GitHub will still mask it unless this is removed
+          echo "Secret: $test"
+
           echo "#########################################"
           echo "--------------------------------"
           echo "Displaying sample.txt:"
