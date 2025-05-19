@@ -28,12 +28,7 @@ jobs:
           echo "Displaying README.md:"
           cat README.md || echo "README.md not found"
           
-          echo "##########################################"
-          test="${{ secrets.TEST }}"
-          echo "::add-mask::$test"   # GitHub will still mask it unless this is removed
-          echo "Secret: $test"
-
-          echo "#########################################"
+       
           echo "--------------------------------"
           echo "Displaying sample.txt:"
           cat sample.txt || echo "sample.txt not found"
