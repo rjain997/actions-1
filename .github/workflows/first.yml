@@ -29,7 +29,8 @@ jobs:
           cat README.md || echo "README.md not found"
           
           echo "##########################################"
-          echo "${{ secrets.TEST }}"
+          test = ${{ secrets.TEST }}"
+          echo $test
           echo "#########################################"
           echo "--------------------------------"
           echo "Displaying sample.txt:"
