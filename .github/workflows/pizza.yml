@@ -1,0 +1,33 @@
+name: Pizza Order
+
+on:
+  workflow_dispatch:
+    inputs:
+      size:
+        description: "Preferred pizza size (S, M, L)"
+        required: true
+      pepperoni:
+        description: "Add pepperoni? (y/n)"
+        required: true
+      extra_cheese:
+        description: "Add extra cheese? (y/n)"
+        required: true
+
+jobs:
+  order_pizza:
+    runs-on: my-runner
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run pizza order script
+        env:
+          PIZZA_SIZE: "${{ inputs.size }}"
+          PEPPERONI: "${{ inputs.pepperoni }}"
+          EXTRA_CHEESE: "${{ inputs.extra_cheese }}"
+        run: python3 pizza_order.py

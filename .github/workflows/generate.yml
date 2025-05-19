@@ -1,0 +1,22 @@
+name: Generate ASCII Artwork
+
+on:
+  push:
+    paths:
+      - '.github/workflows/generate.yml'
+      - 'ascii.sh'
+
+jobs:
+  ascii_job:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: List files
+        run: ls -lrth
+      
+      - name: Execute Shell Script!
+        run:  bash ascii.sh
+
+
