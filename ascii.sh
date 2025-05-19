@@ -3,11 +3,11 @@ echo "-------------------------------------------------------------"
 whoami
 sleep 10
 echo "lets install cowasay"
-apt-get update > /dev/null 2>&1
-apt-get install -y wget > /dev/null 2>&1
-wget http://archive.ubuntu.com/ubuntu/pool/universe/c/cowsay/cowsay_3.03+dfsg2-8_all.deb > /dev/null 2>&1
-apt-get install -y libtext-charwidth-perl perl > /dev/null 2>&1
-dpkg -i cowsay_3.03+dfsg2-8_all.deb > /dev/null 2>&1
+sudo apt-get update > /dev/null 2>&1
+sudo apt-get install -y wget > /dev/null 2>&1
+sudo wget http://archive.ubuntu.com/ubuntu/pool/universe/c/cowsay/cowsay_3.03+dfsg2-8_all.deb > /dev/null 2>&1
+sudo apt-get install -y libtext-charwidth-perl perl > /dev/null 2>&1
+sudo dpkg -i cowsay_3.03+dfsg2-8_all.deb > /dev/null 2>&1
 sleep 10
 echo "-------------------------------------------------------------"
 echo " Lets draw a dragon"
