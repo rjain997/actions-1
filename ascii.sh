@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "-------------------------------------------------------------"
 whoami
+su rj
 sleep 10
 echo "lets install cowasay"
 sudo apt-get update > /dev/null 2>&1
