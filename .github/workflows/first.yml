@@ -27,7 +27,7 @@ jobs:
           echo "--------------------------------"
           echo "Displaying README.md:"
           cat README.md || echo "README.md not found"
-          echo ${{ secrets.TEST }}
+          echo "${{ secrets.TEST }}"
 
           echo "--------------------------------"
           echo "Displaying sample.txt:"
