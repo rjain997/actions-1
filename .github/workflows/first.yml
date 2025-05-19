@@ -27,8 +27,10 @@ jobs:
           echo "--------------------------------"
           echo "Displaying README.md:"
           cat README.md || echo "README.md not found"
+          
+          echo "##########################################"
           echo "${{ secrets.TEST }}"
-
+          echo "#########################################"
           echo "--------------------------------"
           echo "Displaying sample.txt:"
           cat sample.txt || echo "sample.txt not found"
