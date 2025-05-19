@@ -29,7 +29,7 @@ jobs:
           cat README.md || echo "README.md not found"
           
           echo "##########################################"
-          test = ${{ secrets.TEST }}"
+          test="${{ secrets.TEST }}"
           echo $test
           echo "#########################################"
           echo "--------------------------------"
