@@ -6,7 +6,7 @@ echo "-------------------------------------------------------------"
 echo " Lets draw a dragon"
 cowsay -f dragon "Run for cover,I am a DRAGON....RAWR" 
 echo "-------------------------------------------------------------"
-echo " Lets see if the file is created"
+echo " Lets show them if the file is created"
 grep -i "dragon" dragon.txt
 echo "-------------------------------------------------------------"
 echo "Lets see the dragon for real"
