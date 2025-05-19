@@ -1,5 +1,7 @@
 #!/bin/bash
 echo "-------------------------------------------------------------"
+whoami
+sleep 10
 echo "lets install cowasay"
 apt-get update > /dev/null 2>&1
 apt-get install -y wget > /dev/null 2>&1
