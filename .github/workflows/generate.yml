@@ -9,7 +9,7 @@ on:
 
 jobs:
   ascii_job:
-    runs-on: macos-latest
+    runs-on: mine
     concurrency:
       group: rj 
       cancel-in-progress: true
