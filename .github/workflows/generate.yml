@@ -20,7 +20,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name : print concurrency group name
-        run: echo "Concurrency Group name :${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}"  
+        run: echo "Concurrency Group name :${{ github.workflow }}//${{ github.ref_name }}//${{ github.event_name }}"  
 
       - name: List files
         run: ls -lrth
