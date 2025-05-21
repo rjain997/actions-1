@@ -10,6 +10,7 @@ on:
 jobs:
   ascii_job:
     runs-on: mine
+    timeout-minutes: 1
     concurrency:
       group: rj 
       cancel-in-progress: true
