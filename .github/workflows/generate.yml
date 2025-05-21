@@ -9,7 +9,7 @@ on:
 
 jobs:
   ascii_job:
-    runs-on: self-hosted
+    runs-on: mac
     steps:
       - name: whoami
         run: whoami
