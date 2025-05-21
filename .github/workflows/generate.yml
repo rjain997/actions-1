@@ -11,6 +11,8 @@ jobs:
   ascii_job:
     runs-on: self-hosted
     steps:
+      -name: whoami
+       run: whoami
       - name: Checkout Repository
         uses: actions/checkout@v4
 
