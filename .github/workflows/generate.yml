@@ -24,5 +24,7 @@ jobs:
       
       - name: Execute Shell Script!
         run:  bash ascii.sh
+      - name: soja beta
+        run:  sleep 300
 
 
