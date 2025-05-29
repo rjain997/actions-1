@@ -14,3 +14,9 @@ jobs:
         steps:
             - name: List all the dirs
               run: ls /            
+    check_home:
+        runs-on: ubuntu-latest
+        needs: os_check
+        steps:
+            - name: List of accounts
+              run: ls /home        
