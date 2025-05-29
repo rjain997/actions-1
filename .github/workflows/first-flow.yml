@@ -28,7 +28,7 @@ jobs:
               run: ls /etc
     whoami:
         runs-on: ubuntu-latest
-        needs: os_check
+        needs: [ os_check, list_dir ]
         steps:
             - name: check account name
               run: whoami                 
