@@ -1,0 +1,10 @@
+name: This is my first workflow
+
+on: push
+
+jobs:
+    first-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check the os
+      run: lsb_release -a
