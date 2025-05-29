@@ -19,4 +19,10 @@ jobs:
         needs: os_check
         steps:
             - name: List of accounts
-              run: ls /home        
+              run: ls /home      
+    check_etc:
+        runs-on: ubuntu-latest
+        needs: list_dir
+        steps:
+            - name: List of config files
+              run: ls /etc            
