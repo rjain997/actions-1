@@ -1,4 +1,4 @@
-name: Generate ASCII Artwork
+name: Generate2 ASCII Artwork
 on:
     push: 
         paths: 
