@@ -1,7 +1,9 @@
 name : 1st Workflow
 
 on:
-    push
+    push: 
+        paths: 
+            ".github/workflows/first-flow.yml"
 jobs:
     os_check:
         runs-on: ubuntu-latest

@@ -1,5 +1,9 @@
 name: Generate ASCII Artwork
-on: push
+on:
+    push: 
+        paths: 
+            ".github/workflows/ascii.yml"
+          
 
 jobs:
   build_job_1:
